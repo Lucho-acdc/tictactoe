@@ -85,6 +85,7 @@ addGo = (e) => {
     e.target.removeEventListener("click", addGo);
 
     movimientosTotales++;
+    console.log(movimientosTotales);
 
     const hayGanador = checkScore();
     if (!hayGanador) {
@@ -107,6 +108,7 @@ function reiniciarJuego() {
     infoDisplay.textContent = "Elige quien empieza";
 
     go = "";
+    movimientosTotales = 0;
 
     elegir.classList.remove("novisible");
     elegir.classList.add("visible");
