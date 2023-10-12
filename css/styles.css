@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
 }
 
 body {
@@ -22,8 +25,10 @@ body {
 }
 
 #x,
-#o {
-    width: 30px;
+#o,
+#a,
+#b {
+    min-width: 100px;
     height: 30px;
     border: 0.5 solid black;
     border-radius: 7px;
@@ -31,10 +36,27 @@ body {
     margin: 5px;
 }
 
+#a,
+#b {
+    flex: 1;
+}
+
 #x:hover,
-#o:hover {
+#o:hover, 
+#a:hover, 
+#b:hover {
     background-color: #e6394a;
     color: white;
+}
+
+.inputNombres input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
 }
 
 #gameboard {
@@ -52,6 +74,7 @@ body {
 }
 
 #reset {
+    margin: 25px;
     width: 100px;
     height: 25px;
     border: 0.5 solid black;
