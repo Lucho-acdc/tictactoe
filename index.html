@@ -27,7 +27,20 @@
 
     <div id="gameboard"></div>
 
-    <button id="reset">Reiniciar</button>
+    <div class="divReinicio">
+    <button id="reset">Volver a jugar</button>
+    <button id="verHistorial">Ver historial</button>
+    </div>
+
+    <div id="modal" class="modal novisible">
+        <div class="modal-content">
+            <span class="close" id="cerrarHistorialFlotante">&times;</span>
+            <div id="contenedorHistorial"></div>
+        </div>
+    </div>
+    
+
+    <button id="resetTodo">Reiniciar estadisticas</button>
     
     <script src="./js/main.js"></script>
 </body>

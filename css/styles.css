@@ -14,6 +14,42 @@ body {
     flex-direction: column;
     height: 100vh;
     background-color: #090c31;
+    padding: 10%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    transform: translate(50%, 50%);
+    font-size: 2.5rem;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
 .novisible {
@@ -73,16 +109,24 @@ body {
     margin: 25px;
 }
 
-#reset {
+.divReinicio {
+    display: flex;
+}
+
+#reset,
+#resetTodo,
+#verHistorial {
     margin: 25px;
-    width: 100px;
-    height: 25px;
+    width: 110px;
+    height: 50px;
     border: 0.5 solid black;
     border-radius: 20px;
     color: black;
 }
 
-#reset:hover {
+#reset:hover,
+#resetTodo:hover,
+#verHistorial:hover {
     background-color: #e6394a;
     color: white;
 }
