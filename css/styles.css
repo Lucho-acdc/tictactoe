@@ -58,12 +58,15 @@ body {
 
 .visible {
     display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 #x,
 #o,
 #a,
-#b {
+#b,
+#iniciar {
     min-width: 100px;
     height: 30px;
     border: 0.5 solid black;
@@ -71,6 +74,7 @@ body {
     color: black;
     margin: 5px;
 }
+
 
 #a,
 #b {
@@ -80,7 +84,8 @@ body {
 #x:hover,
 #o:hover, 
 #a:hover, 
-#b:hover {
+#b:hover,
+#iniciar:hover {
     background-color: #e6394a;
     color: white;
 }
